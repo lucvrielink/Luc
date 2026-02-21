@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {"id": 1, "input": {"skinType": "droog", "goal": "hydratatie"}, "expected": {"bundle": "Dry & Dehydrated Skin Routine", "addOns": []}},
+    {"id": 2, "input": {"skinType": "gevoelig", "goal": "hydratatie"}, "expected": {"bundle": "Sensitive & Reactive Skin Routine", "addOns": []}},
+    {"id": 3, "input": {"skinType": "vet", "goal": "onzuiverheden"}, "expected": {"bundle": "Clear & Balanced Skin Routine", "addOns": []}},
+    {"id": 4, "input": {"skinType": "vet", "goal": "onzuiverheden", "mentionsAcne": true}, "expected": {"bundle": "Clear & Balanced Skin Routine", "addOns": ["Acne Spot Care"]}},
+    {"id": 5, "input": {"skinType": "gecombineerd", "goal": "glans & balans"}, "expected": {"bundle": "Combination Skin Balance Routine", "addOns": []}},
+    {"id": 6, "input": {"skinType": "normaal"}, "expected": {"bundle": "Normal & Balanced Skin Routine", "addOns": []}},
+    {"id": 7, "input": {"goal": "glow", "skinType": "droog"}, "expected": {"bundle": "Glow & Radiance Routine", "addOns": []}},
+    {"id": 8, "input": {"goal": "glow", "mentionsTextureOrDullness": true}, "expected": {"bundle": "Glow & Radiance Routine", "addOns": ["AHA Peeling Concentrate"]}},
+    {"id": 9, "input": {"goal": "glow", "mentionsTextureOrDullness": true, "flags": {"verySensitive": true}}, "expected": {"bundle": "Glow & Radiance Routine", "addOns": []}},
+    {"id": 10, "input": {"goal": "anti-age", "skinType": "droog"}, "expected": {"bundle": "Firm & Smooth Skin Routine", "addOns": []}},
+    {"id": 11, "input": {"goal": "simpel"}, "expected": {"bundle": "Simple Daily Skincare Routine", "addOns": []}},
+    {"id": 12, "input": {"concerns": ["puistjes op kin"]}, "expected": {"bundle": "Normal & Balanced Skin Routine", "addOns": ["Acne Spot Care"]}},
+    {"id": 13, "input": {"concerns": ["doffe huid", "ruwe textuur"]}, "expected": {"bundle": "Normal & Balanced Skin Routine", "addOns": ["AHA Peeling Concentrate"]}},
+    {"id": 14, "input": {"skinType": "gevoelig", "concerns": ["roodheid"]}, "expected": {"bundle": "Sensitive & Reactive Skin Routine", "addOns": []}},
+    {"id": 15, "input": {"skinType": "gevoelig", "goal": "onzuiverheden", "mentionsAcne": true}, "expected": {"bundle": "Clear & Balanced Skin Routine", "addOns": ["Acne Spot Care"]}},
+    {"id": 16, "input": {"goal": "vlekjes"}, "expected": {"bundle": "Glow & Radiance Routine", "addOns": []}},
+    {"id": 17, "input": {"goal": "glow", "concerns": ["poriën", "build-up"]}, "expected": {"bundle": "Glow & Radiance Routine", "addOns": ["AHA Peeling Concentrate"]}},
+    {"id": 18, "input": {"goal": "glow", "concerns": ["poriën"], "flags": {"isTeen": true}}, "expected": {"bundle": "Glow & Radiance Routine", "addOns": []}},
+    {"id": 19, "input": {"skinType": "vet", "concerns": ["breakouts", "dofheid"]}, "expected": {"bundle": "Clear & Balanced Skin Routine", "addOns": ["Acne Spot Care", "AHA Peeling Concentrate"]}},
+    {"id": 20, "input": {"skinType": "droog", "concerns": ["trekkerig"]}, "expected": {"bundle": "Dry & Dehydrated Skin Routine", "addOns": []}},
+    {"id": 21, "input": {"skinType": "gecombineerd", "concerns": ["vette t-zone", "droge wangen"]}, "expected": {"bundle": "Combination Skin Balance Routine", "addOns": []}},
+    {"id": 22, "input": {"goal": "anti-age", "concerns": ["fijne lijntjes"]}, "expected": {"bundle": "Firm & Smooth Skin Routine", "addOns": []}}
+  ]
+}
